@@ -6,6 +6,14 @@ While we discover features by using GitHub Copilot, watching over coverage of wh
 
 An LLM agent runs tools in a loop to achieve a goal.
 
+## Tools
+- IDE: VS Code (options!)
+- Extensions: Github Copilot, VS Code Speech
+- Github Account: CGI Hosted or Public 
+- Github Copilot licence: Private or CGI's or Client's 
+- Version control: Git on GitHub (options!) 
+- MCPs: Built-in (IDE)
+
 ## Checklist
 
 - [ ] Admin rights, Developer exception group
