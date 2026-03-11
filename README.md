@@ -37,6 +37,7 @@ An LLM agent runs tools in a loop to achieve a goal.
 - [x] Session history
 - [x] Kill with Developer: Show Running Extensions
 - [x] Hidden terminal
+- [x] Approaches to greenfield and legacy codebases
 
 ## Principles
 
