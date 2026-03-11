@@ -29,7 +29,7 @@ An LLM agent runs tools in a loop to achieve a goal.
 - [ ] Custom agents (.github/agents/\*.agent.md)
 - [ ] Custom skills (.github/skills/this_skill/SKILL.md)
 - [ ] Built-in actions / wizards to create instructions, agents, skills, etc.
-- [ ] Awesome copilot
+- [ ] Awesome copilot https://github.com/github/awesome-copilot
 - [ ] Session history
 - [ ] Kill with Developer: Show Running Extensions
 
