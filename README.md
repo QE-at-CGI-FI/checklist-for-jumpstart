@@ -18,7 +18,7 @@ An LLM agent runs tools in a loop to achieve a goal.
 
 - [ ] Admin rights, Developer exception group
 - [ ] Security classification to choice of Github Copilot licence
-- [ ] Central admin features: ask on delete, block local models, limit model access, limit MCPs, limit CLI
+- [ ] Central admin features: ask on delete, block local models, limit model access, limit MCPs, limit CLI, limit image recognition
 - [ ] LLM selection
 - [ ] Context window size
 - [ ] Ask, Plan and Agent Mode
@@ -39,3 +39,17 @@ An LLM agent runs tools in a loop to achieve a goal.
 - Our experiences, through doing something - not a demo, but a discovery
 - Pair and ensemble programming: strong-style navigation. For an idea to get to the computer, it must pass through someone else's hands. 
 - Navigate on highest level of abstraction that creates the action: Intent, location, details.
+
+## Quotes
+
+Governance through prompts is like lending a book to a friend and hoping it comes back.
+— Pegah Ahmadi
+
+If it turns out I worked more to preserve workslop, it does not add to the sense of trust.
+—Maaret Pyhäjärvi
+
+Developers on average spend as much as 58% of their time comprehending existing source code.
+—Felienne Hermans
+
+A majority of the production failures (77%) can be reproduced by a unit test.
+—Kevlin Henney
