@@ -25,8 +25,8 @@ An LLM agent runs tools in a loop to achieve a goal.
 - [x] Context window size
 - [x] Inline autocomplete and actions
 - [x] Ask, Plan and Agent Mode
-- [x] MCPs (code)
-- [x] CLI (code)
+- [x] MCPs 
+- [x] CLI 
 - [x] Premium token consumption
 - [x] Custom instructions (.github/copilot_instructions.md)
 - [x] Custom agents (.github/agents/\*.agent.md)
