@@ -66,6 +66,10 @@ A majority of the production failures (77%) can be reproduced by a unit test.
 
 ## Expectations
 
+### This session expectations
+
+<insert expectations here>
+
 ### Past expectations
 
 - Experiences at CGI, what are common setting
@@ -76,10 +80,6 @@ A majority of the production failures (77%) can be reproduced by a unit test.
 - Basics and use in daily work
 - CGI provided copilot limits and the second tier access
 - Blocked options, e.g. PR review (locally?)
-
-### This session expectations
-
-<insert expectations here>
 
 ## Shared tips
 
