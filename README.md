@@ -17,34 +17,37 @@ An LLM agent runs tools in a loop to achieve a goal.
 
 ## Checklist
 
-- [x] Admin rights, Developer exception group
-- [x] Security classification to choice of Github Copilot licence
-- [x] Central admin features: ask on delete, block local models, limit model access, limit MCPs, limit CLI, limit image recognition
-- [x] LLM selection
-- [x] From prompt engineering to context engineering
-- [x] Context window size
-- [x] Inline autocomplete and actions
-- [x] Ask, Plan and Agent Mode
-- [x] MCPs 
-- [x] CLI 
-- [x] Premium token consumption
-- [x] Custom instructions (.github/copilot_instructions.md)
-- [x] Custom agents (.github/agents/\*.agent.md)
-- [x] Custom skills (.github/skills/this_skill/SKILL.md)
-- [x] Built-in actions / wizards to create instructions, agents, skills, etc.
-- [x] AI exchange
-- [x] Awesome copilot https://github.com/github/awesome-copilot
-- [x] Session history
-- [x] Kill with Developer: Show Running Extensions
-- [x] Hidden terminal
-- [x] Approaches to greenfield and legacy codebases
+- [ ] Admin rights, Developer exception group
+- [ ] Security classification to choice of Github Copilot licence
+- [ ] Central admin features: ask on delete, block local models, limit model access, limit MCPs, limit CLI, limit image recognition
+- [ ] LLM selection
+- [ ] From prompt engineering to context engineering
+- [ ] Context window size
+- [ ] Inline autocomplete and actions
+- [ ] Ask, Plan and Agent Mode
+- [ ] MCPs
+- [ ] CLI - Copilot and tools
+- [ ] Premium token consumption
+- [ ] Custom instructions (.github/copilot_instructions.md)
+- [ ] Custom agents (.github/agents/\*.agent.md)
+- [ ] Custom skills (.github/skills/this_skill/SKILL.md)
+- [ ] Built-in actions / wizards to create instructions, agents, skills, etc.
+- [ ] AI exchange
+- [ ] Awesome copilot https://github.com/github/awesome-copilot
+- [ ] Session history
+- [ ] Kill with Developer: Show Running Extensions
+- [ ] Hidden terminal
+- [ ] Approaches to greenfield and legacy codebases
 
 ## Principles
 
-- Virtual hand raise, use the mic not the chat
-- 15 min per person as hands or boss, so rotate on 5 min timer
+1. Ensemble learning: doing by rotating driver and navigator
+
 - Our experiences, through doing something - not a demo, but a discovery
 - Pair and ensemble programming: strong-style navigation. For an idea to get to the computer, it must pass through someone else's hands.
+- Virtual hand raise, use the mic not the chat
+- Sometimes you may want to ask for control of keyboard to show things as words are harder
+- 15 min per person as hands or boss, so rotate on 5 min timer
 - Navigate on highest level of abstraction that creates the action: Intent, location, details.
 
 ## Quotes
@@ -61,7 +64,9 @@ Developers on average spend as much as 58% of their time comprehending existing 
 A majority of the production failures (77%) can be reproduced by a unit test.
 —Kevlin Henney
 
-# Expectations
+## Expectations
+
+### Past expectations
 
 - Experiences at CGI, what are common setting
 - Limitations of agentic tools at CGI and getting things activated
@@ -72,7 +77,11 @@ A majority of the production failures (77%) can be reproduced by a unit test.
 - CGI provided copilot limits and the second tier access
 - Blocked options, e.g. PR review (locally?)
 
-# Shared tips
+### This session expectations
+
+<insert expectations here>
+
+## Shared tips
 
 If you want to see what does the token mean:
 https://platform.openai.com/tokenizer
