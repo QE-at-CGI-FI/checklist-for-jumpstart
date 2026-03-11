@@ -22,6 +22,7 @@ An LLM agent runs tools in a loop to achieve a goal.
 - [ ] LLM selection
 - [ ] From prompt engineering to context engineering
 - [ ] Context window size
+- [ ] Inline autocomplete and actions
 - [ ] Ask, Plan and Agent Mode
 - [ ] MCPs
 - [ ] CLI
