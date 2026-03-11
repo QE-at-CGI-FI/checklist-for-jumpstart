@@ -41,6 +41,7 @@ An LLM agent runs tools in a loop to achieve a goal.
 ## Principles
 
 - Virtual hand raise, use the mic not the chat
+- 15 min per person as hands or boss, so rotate on 5 min timer
 - Our experiences, through doing something - not a demo, but a discovery
 - Pair and ensemble programming: strong-style navigation. For an idea to get to the computer, it must pass through someone else's hands.
 - Navigate on highest level of abstraction that creates the action: Intent, location, details.
