@@ -20,6 +20,7 @@ An LLM agent runs tools in a loop to achieve a goal.
 - [ ] Security classification to choice of Github Copilot licence
 - [ ] Central admin features: ask on delete, block local models, limit model access, limit MCPs, limit CLI, limit image recognition
 - [ ] LLM selection
+- [ ] From prompt engineering to context engineering
 - [ ] Context window size
 - [ ] Ask, Plan and Agent Mode
 - [ ] MCPs
