@@ -94,3 +94,6 @@ https://youtu.be/sFEDAkJy9Dc?si=IzsLI_uYtelDL55X&t=197
 There are some pointers that point to repository level "guidance" files like CLAUDE.md / AGENTS:md are not helping much
 https://arxiv.org/pdf/2602.11988
 https://thomas-wiegold.com/blog/claude-md-helpful-or-expensive-noise/
+
+Premium requests
+https://dev.to/anchildress1/copilot-premium-requests-more-than-asked-exactly-what-you-need-8ph
