@@ -73,6 +73,12 @@ A majority of the production failures (77%) can be reproduced by a unit test.
 
 ### Past expectations
 
+- Our experiences, through doing something - not a demo, but a discovery
+- Pair and ensemble programming: strong-style navigation. For an idea to get to the computer, it must pass through someone else's hands.
+- Virtual hand raise, use the mic not the chat
+- Sometimes you may want to ask for control of keyboard to show things as words are harder
+- 15 min per person as hands or boss, so rotate on 5 min timer
+- Navigate on highest level of abstraction that creates the action: Intent, location, details.
 - Experiences at CGI, what are common setting
 - Limitations of agentic tools at CGI and getting things activated
 - Professional use, easier to use it, minimizing own effort, VS and Github Copilot
