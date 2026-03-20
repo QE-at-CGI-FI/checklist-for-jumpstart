@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sääsovellus</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>Sääsovellus</h1>
+      <p class="lead">Anna paikka ja hae ajantasainen sää.</p>
+
+      <form id="weather-form" class="weather-form">
+        <label for="place">Paikka</label>
+        <input id="place" name="place" type="text" placeholder="Esim. Helsinki" required />
+        <button type="submit">Hae sää</button>
+      </form>
+
+      <section id="status" class="status" aria-live="polite"></section>
+      <section id="result" class="result" hidden>
+        <h2 id="result-place"></h2>
+        <p><strong>Lämpötila:</strong> <span id="result-temp"></span> °C</p>
+        <p><strong>Sää:</strong> <span id="result-desc"></span></p>
+        <p><strong>Lähde:</strong> <span id="result-source"></span></p>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
