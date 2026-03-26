@@ -69,6 +69,15 @@ A majority of the production failures (77%) can be reproduced by a unit test.
 
 ### This session expectations
 
+- Copilot CLI use
+- Going beyond inline code completion
+- What should be done so that it is really useful?
+- team of agents doing things at the same time
+- More than ad hoc use
+- Understanding to for purposes of selling these things as services, knowing a bit more than right now
+- Getting started with Q developer, what to use this thing for?
+- How to stay in control with these tools?
+
 <insert expectations here>
 
 ### Past expectations
