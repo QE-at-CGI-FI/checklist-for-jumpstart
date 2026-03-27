@@ -1,114 +1,171 @@
-# checklist-for-jumpstart
+# Weather App End-to-End Tests
 
-While we discover features by using GitHub Copilot, watching over coverage of what we should be discovering may be beneficial. And making notes of our insights to share as summary does not hurt, I guess?
+Kattavat E2E-testit suomenkieliselle sääsovellukselle "Missä paistaa aurinko?".
 
-## Definition
+## Testin asennus ja käynnistys
 
-An LLM agent runs tools in a loop to achieve a goal.
+### 1. Asenna riippuvuudet
 
-## Tools
+```bash
+npm install
+npx playwright install
+```
 
-- IDE: VS Code (options!)
-- Extensions: Github Copilot, VS Code Speech
-- Github Account: CGI Hosted or Public
-- Github Copilot licence: Private or CGI's or Client's
-- Version control: Git on GitHub (options!)
-- MCPs: Built-in (IDE)
+### 2. Käynnistä sovellus
 
-## Checklist
+Toisessa terminaalissa:
+```bash
+streamlit run app.py
+```
 
-- [ ] Admin rights, Developer exception group
-- [ ] Security classification to choice of Github Copilot licence
-- [ ] Central admin features: ask on delete, block local models, limit model access, limit MCPs, limit CLI, limit image recognition
-- [ ] LLM selection
-- [ ] Auto model selection, 90% for _most available model_
-- [ ] From prompt engineering to context engineering
-- [ ] Context window size
-- [ ] Inline autocomplete and actions
-- [ ] Ask, Plan and Agent Mode
-- [ ] MCPs
-- [ ] CLI - Copilot and tools
-- [ ] Premium token consumption (on send)
-- [ ] Custom instructions (.github/copilot_instructions.md)
-- [ ] Custom agents (.github/agents/\*.agent.md)
-- [ ] Custom skills (.github/skills/this_skill/SKILL.md)
-- [ ] Built-in actions / wizards to create instructions, agents, skills, etc.
-- [ ] AI exchange
-- [ ] Awesome copilot https://github.com/github/awesome-copilot
-- [ ] Session history
-- [ ] Kill with Developer: Show Running Extensions
-- [ ] Hidden terminal
-- [ ] Approaches to greenfield and legacy codebases
+Tai anna Playwrightin käynnistää sovellus automaattisesti (katso `playwright.config.ts`).
 
-## Principles
+### 3. Suorita testit
 
-1. Ensemble learning: doing by rotating driver and navigator
+```bash
+# Kaikki testit
+npm test
 
-- Our experiences, through doing something - not a demo, but a discovery
-- Pair and ensemble programming: strong-style navigation. For an idea to get to the computer, it must pass through someone else's hands.
-- Virtual hand raise, use the mic not the chat
-- Sometimes you may want to ask for control of keyboard to show things as words are harder
-- 15 min per person as hands or boss, so rotate on 5 min timer
-- Navigate on highest level of abstraction that creates the action: Intent, location, details.
+# Näytä selain testauksen aikana
+npm run test:headed
 
-## Quotes
+# Interaktiivinen UI-tila  
+npm run test:ui
 
-Governance through prompts is like lending a book to a friend and hoping it comes back.
-— Pegah Ahmadi
+# Debug-tila
+npm run test:debug
 
-If it turns out I worked more to preserve workslop, it does not add to the sense of trust.
-—Maaret Pyhäjärvi
+# Näytä raportti
+npm run test:report
+```
 
-Developers on average spend as much as 58% of their time comprehending existing source code.
-—Felienne Hermans
+## Testien rakenne
 
-A majority of the production failures (77%) can be reproduced by a unit test.
-—Kevlin Henney
+### 📁 tests/initial-load/
+- `page-load.spec.ts` - Sovelluksen latautuminen
+- `location-detection.spec.ts` - Automaattinen sijaintitunnistus
 
-## Expectations
+### 📁 tests/coordinates/  
+- `valid-input.spec.ts` - Validit koordinaatit
+- `invalid-input.spec.ts` - Invalidit koordinaatit ja virheidenkäsittely
 
-### This session expectations
+### 📁 tests/sunshine-search/
+- `basic-search.spec.ts` - Perus auringonhaku
+- `radius-selection.spec.ts` - Hakusäteen valinta
+- `results-display.spec.ts` - Tulosten näyttö ja tulkinta
 
-- Copilot CLI use
-- Going beyond inline code completion
-- What should be done so that it is really useful?
-- team of agents doing things at the same time
-- More than ad hoc use
-- Understanding to for purposes of selling these things as services, knowing a bit more than right now
-- Getting started with Q developer, what to use this thing for?
-- How to stay in control with these tools?
+### 📁 tests/forecast/
+- `basic-forecast.spec.ts` - Ennusteen haku
+- `daily-cards.spec.ts` - Päiväkorttien sisältö  
+- `temperature-chart.spec.ts` - Lämpötilakaavio
+- `detailed-table.spec.ts` - Yksityiskohtainen taulukko
 
-<insert expectations here>
+### 📁 tests/error-handling/
+- `network-errors.spec.ts` - Verkko-ongelmat
+- `performance.spec.ts` - Suorituskyky kuormituksessa
 
-### Past expectations
+### 📁 tests/accessibility/
+- `keyboard-navigation.spec.ts` - Näppäimistönavigointi
+- `visual-design.spec.ts` - Visuaalinen suunnittelu
 
-- Our experiences, through doing something - not a demo, but a discovery
-- Pair and ensemble programming: strong-style navigation. For an idea to get to the computer, it must pass through someone else's hands.
-- Virtual hand raise, use the mic not the chat
-- Sometimes you may want to ask for control of keyboard to show things as words are harder
-- 15 min per person as hands or boss, so rotate on 5 min timer
-- Navigate on highest level of abstraction that creates the action: Intent, location, details.
-- Experiences at CGI, what are common setting
-- Limitations of agentic tools at CGI and getting things activated
-- Professional use, easier to use it, minimizing own effort, VS and Github Copilot
-- Additional information on top use of IntelliJ and Github Copilot
-- Claude user, more clever ways after already getting along with AI
-- Basics and use in daily work
-- CGI provided copilot limits and the second tier access
-- Blocked options, e.g. PR review (locally?)
+## Testien ominaisuudet
 
-## Shared tips
+### 🇫🇮 Suomenkielinen tuki
+- Testaa suomenkielistä käyttöliittymää
+- Tukee suomalaisia päivännimiä ja aikamerkintöjä
+- Testaa emoji-käyttöä sääikonina
 
-If you want to see what does the token mean:
-https://platform.openai.com/tokenizer
+### 🌐 API-integraatio  
+- Testaa Open-Meteo-rajapinnan käyttöä
+- Simuloi verkko-ongelmia
+- Testaa välimuistitoimintoja
 
-What's a context
-https://youtu.be/sFEDAkJy9Dc?si=IzsLI_uYtelDL55X&t=197
-(threre is a change coming on claude tool call traffic, no need to watch the full video)
+### 🗺️ Interaktiiviset elementit
+- Pydeck-karttojen testaus
+- Slider-säätimien käyttö
+- Välilehtien navigointi
 
-There are some pointers that point to repository level "guidance" files like CLAUDE.md / AGENTS:md are not helping much
-https://arxiv.org/pdf/2602.11988
-https://thomas-wiegold.com/blog/claude-md-helpful-or-expensive-noise/
+### ⚡ Suorituskykytestit
+- Rinnakkaisten API-kutsujen hallinta
+- ThreadPoolExecutor-toiminnallisuus
+- Välimuistin tehokkuus
 
-Premium requests
-https://dev.to/anchildress1/copilot-premium-requests-more-than-asked-exactly-what-you-need-8ph
+## Konfigurointi
+
+### Selaimet
+Testit ajetaan oletuksena:
+- Chromium (Desktop)
+- Firefox (Desktop)  
+- WebKit/Safari (Desktop)
+- Mobile Chrome (Pixel 5)
+- Mobile Safari (iPhone 12)
+
+### Aikakatkaisut
+- Perus toiminnot: 5-10s
+- API-kutsut: 20-30s  
+- Verkko-ongelmat: 45s
+
+### Raportointi
+- HTML-raportti (playwright-report/)
+- Kuvakaappaukset virhetilanteissa
+- Videot epäonnistuneista testeistä
+- Trace-jäljet uudelleenyrityksistä
+
+## Vianmääritys
+
+### Yleisimmät ongelmat
+
+1. **Sovellus ei ole käynnissä**
+   ```bash
+   streamlit run app.py
+   ```
+
+2. **Selaimet puuttuvat**  
+   ```bash
+   npx playwright install
+   ```
+
+3. **Testit aikakatkaistuvat**
+   - Tarkista verkkoyhteytesi
+   - Varmista että Open-Meteo API on saavutettavissa
+
+4. **Elementtejä ei löydy**
+   - Varmista että Streamlit-versio on yhteensopiva
+   - Tarkista `data-testid` attribuutit
+
+### Debug-vinkkejä
+
+```bash
+# Aja yksittäinen testi
+npx playwright test tests/initial-load/page-load.spec.ts
+
+# Näytä selain hitaasti  
+npx playwright test --headed --slowMo=1000
+
+# Tallenna trace kaikista testeistä
+npx playwright test --trace=on
+```
+
+## Testien laajentaminen
+
+Lisää uusia testejä kopioimalla olemassa olevan testin rakenne:
+
+```typescript
+import { test, expect } from '@playwright/test';
+
+test.describe('Uusi testiryhmä', () => {
+  test('Uusi testi', async ({ page }) => {
+    await page.goto('/');
+    
+    // Testaa toiminnallisuutta
+    await expect(page.locator('h1')).toBeVisible();
+  });
+});
+```
+
+## Ylläpito
+
+- Päivitä `@playwright/test` säännöllisesti
+- Tarkista selainyhteensopivuus
+- Päivitä selektorit jos UI muuttuu  
+- Testaa API-muutoksia vastaavat testit

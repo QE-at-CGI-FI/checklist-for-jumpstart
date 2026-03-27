@@ -19,5 +19,12 @@
         "titleBar.inactiveForeground": "#e7e7e799"
     },
     "peacock.color": "612D53",
-    "robotcode.disableExtension": true
+    "robotcode.disableExtension": true,
+    "chat.tools.terminal.autoApprove": {
+        "/^python3 -c \"import streamlit, httpx, pydeck, pandas; print\\('OK'\\)\"$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "npx playwright": true
+    }
 }
