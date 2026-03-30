@@ -110,3 +110,7 @@ https://thomas-wiegold.com/blog/claude-md-helpful-or-expensive-noise/
 
 Premium requests
 https://dev.to/anchildress1/copilot-premium-requests-more-than-asked-exactly-what-you-need-8ph
+
+Some clients choose to set up AI-in-IDE so that all models come through their AI-API-platform for cost control without blocking controls. The word around is that 200€ / dev per month is a running cost. 
+Setting up an agent that selects the reviewer agents out of a selection to be run on PRs has been a good approach. 
+AI-use-maturity model: from inline, agent-chat, agents-and-skills personal, team, organization and orchestrating tasks. 
