@@ -1,11 +1,9 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { useApi } from '../hooks/useApi';
 import CourseCard from '../components/CourseCard';
 
 export default function CourseSearch() {
   const api = useApi();
-  const navigate = useNavigate();
   const [query, setQuery] = useState({ location: '', radius: 50, rating: '' });
   const [results, setCourses] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -58,7 +56,7 @@ export default function CourseSearch() {
       {results.length > 0 && (
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '1rem' }}>
           {results.map(course => (
-            <CourseCard key={course.id} course={course} onViewDetails={() => navigate(`/search/${course.id}`)} />
+            <CourseCard key={course.id} course={course} />
           ))}
         </div>
       )}

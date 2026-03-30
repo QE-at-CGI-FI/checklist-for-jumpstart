@@ -19,17 +19,6 @@ router.get('/search', authenticate, async (req, res, next) => {
   }
 });
 
-// GET /api/courses/:id — full detail including opening hours
-router.get('/:id', authenticate, async (req, res, next) => {
-  try {
-    const course = await getCourseDetails(req.params.id);
-    if (!course) return res.status(404).json({ error: 'Course not found' });
-    res.json({ course });
-  } catch (err) {
-    next(err);
-  }
-});
-
 // POST /api/courses/bookmark — save a course to user's bookmarks
 router.post('/bookmark', authenticate, async (req, res, next) => {
   try {
@@ -56,6 +45,17 @@ router.get('/bookmarks', authenticate, async (req, res, next) => {
       [req.userId]
     );
     res.json({ bookmarks: result.rows });
+  } catch (err) {
+    next(err);
+  }
+});
+
+// GET /api/courses/:id — full detail including opening hours
+router.get('/:id', authenticate, async (req, res, next) => {
+  try {
+    const course = await getCourseDetails(req.params.id);
+    if (!course) return res.status(404).json({ error: 'Course not found' });
+    res.json({ course });
   } catch (err) {
     next(err);
   }
