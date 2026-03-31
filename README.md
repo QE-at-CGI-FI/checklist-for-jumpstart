@@ -73,26 +73,39 @@ A majority of the production failures (77%) can be reproduced by a unit test.
 
 ### Past expectations
 
-- Leveraging the agent side, creating your own agent, others' routines with Copilot
-- Github Copilot vs. Claude Code
-- What do you do with developer AI tools vs. general AI tools? How do you build agents?
+#### Foundations and getting started
+
+- Basics and use in daily work
 - Everything new
-- Copilot CLI use 
-- Going beyond inline code completion
-- What should be done so that it is really useful?
-- team of agents doing things at the same time
-- More than ad hoc use
-- Understanding to for purposes of selling these things as services, knowing a bit more than right now
 - Getting started with Q developer, what to use this thing for?
-- How to stay in control with these tools?
-- Our experiences, through doing something - not a demo, but a discovery
-- Experiences at CGI, what are common setting
-- Limitations of agentic tools at CGI and getting things activated
+- What should be done so that it is really useful?
+
+#### From autocomplete to agents
+
+- Going beyond inline code completion
+- Leveraging the agent side, creating your own agent, others' routines with Copilot
+- Team of agents doing things at the same time
+- More than ad hoc use
+- What do you do with developer AI tools vs. general AI tools? How do you build agents?
+
+#### Tools, workflows, and developer ergonomics
+
+- Copilot CLI use
 - Professional use, easier to use it, minimizing own effort, VS and Github Copilot
 - Additional information on top use of IntelliJ and Github Copilot
 - Claude user, more clever ways after already getting along with AI
-- Basics and use in daily work
-- CGI provided copilot limits and the second tier access
+
+#### Comparison and positioning
+
+- Github Copilot vs. Claude Code
+- Understanding for purposes of selling these things as services, knowing a bit more than right now
+
+#### Governance, controls, and enterprise constraints
+
+- How to stay in control with these tools?
+- Experiences at CGI, what are common setting
+- Limitations of agentic tools at CGI and getting things activated
+- CGI provided Copilot limits and the second tier access
 - Blocked options, e.g. PR review (locally?)
 
 ## Shared tips
@@ -111,6 +124,6 @@ https://thomas-wiegold.com/blog/claude-md-helpful-or-expensive-noise/
 Premium requests
 https://dev.to/anchildress1/copilot-premium-requests-more-than-asked-exactly-what-you-need-8ph
 
-Some clients choose to set up AI-in-IDE so that all models come through their AI-API-platform for cost control without blocking controls. The word around is that 200€ / dev per month is a running cost. 
-Setting up an agent that selects the reviewer agents out of a selection to be run on PRs has been a good approach. 
-AI-use-maturity model: from inline, agent-chat, agents-and-skills personal, team, organization and orchestrating tasks. 
+Some clients choose to set up AI-in-IDE so that all models come through their AI-API-platform for cost control without blocking controls. The word around is that 200€ / dev per month is a running cost.
+Setting up an agent that selects the reviewer agents out of a selection to be run on PRs has been a good approach.
+AI-use-maturity model: from inline, agent-chat, agents-and-skills personal, team, organization and orchestrating tasks.
