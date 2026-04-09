@@ -19,16 +19,16 @@ An LLM agent runs tools in a loop to achieve a goal.
 
 - [ ] Admin rights, Developer exception group
 - [ ] Security classification to choice of Github Copilot licence
-- [ ] Central admin features: ask on delete, block local models, limit model access, limit MCPs, limit CLI, limit image recognition
+- [ ] Central admin features: ask on delete, block local models, limit model access, limit MCPs, limit CLI, limit image recognition, limit code reuse for IPR risk
 - [ ] LLM selection
 - [ ] Auto model selection, 90% for _most available model_
 - [ ] From prompt engineering to context engineering
 - [ ] Context window size
 - [ ] Inline autocomplete and actions
 - [ ] Ask, Plan and Agent Mode
-- [ ] MCPs
+- [ ] MCPs and SAR (Software Advisory Register) listing
 - [ ] CLI - Copilot and tools
-- [ ] Premium token consumption (on send)
+- [ ] Premium request consumption (on send)
 - [ ] Custom instructions (.github/copilot_instructions.md)
 - [ ] Custom agents (.github/agents/\*.agent.md)
 - [ ] Custom skills (.github/skills/this_skill/SKILL.md)
@@ -38,6 +38,7 @@ An LLM agent runs tools in a loop to achieve a goal.
 - [ ] Session history
 - [ ] Kill with Developer: Show Running Extensions
 - [ ] Hidden terminal
+- [ ] PII materials, hooks
 - [ ] Approaches to greenfield and legacy codebases
 
 ## Principles
