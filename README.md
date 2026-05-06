@@ -40,6 +40,7 @@ An LLM agent runs tools in a loop to achieve a goal.
 - [ ] Hidden terminal
 - [ ] PII materials, hooks
 - [ ] Approaches to greenfield and legacy codebases
+- [ ] June 1st 2026 changes on cost allocation for use
 
 ## Principles
 
