@@ -35,6 +35,7 @@ An LLM agent runs tools in a loop to achieve a goal.
 - [ ] Built-in actions / wizards to create instructions, agents, skills, etc.
 - [ ] AI exchange
 - [ ] Awesome copilot https://github.com/github/awesome-copilot
+- [ ] Quality engineering agents https://github.com/proffesor-for-testing/agentic-qe 
 - [ ] Session history
 - [ ] Kill with Developer: Show Running Extensions
 - [ ] Hidden terminal
@@ -70,6 +71,9 @@ A majority of the production failures (77%) can be reproduced by a unit test.
 ## Expectations
 
 ### This session expectations
+
+- from small exact problems (like generating tests or finding answers or explaining error messages) to wider use
+- creating agents - like time sheet entry creator
 
 <insert expectations here>
 
